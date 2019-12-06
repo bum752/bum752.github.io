@@ -1,6 +1,7 @@
 ---
 title: 'JPA entity listener 만들기'
 description: '엔티티의 변화를 감지해 같은 테이블과 다른 테이블 모두 데이터를 조작하는 entity listener 를 만들어 적용한 경험을 간단한 예와 소개합니다.'
+excerpt: '엔티티의 변화를 감지해 같은 테이블과 다른 테이블 모두 데이터를 조작하는 entity listener 를 만들어 적용한 경험을 간단한 예와 소개합니다.'
 time: 2019-09-06 18:17:00
 categories: [java, spring, spring boot, jpa, hibernate]
 header:
