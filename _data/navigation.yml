@@ -5,6 +5,8 @@ main:
   - title: "카테고리"
     layout: categories
     url: /categories
+  - title: "이력서"
+    url: /resume
   # - title: "About"
   #   url: /about
   # - title: "About"
