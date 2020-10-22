@@ -1,9 +1,28 @@
 ---
-title: 'AWS Elastic Beanstalk Procfile을 이용한 Java 환경 Charset 설정'
+title: "AWS Elastic Beanstalk Procfile을 이용한 Java 환경 Charset 설정 (feat. JVM 옵션 설정)"
 time: 2019-06-22 17:00:00
-categories: [aws, elastic beanstalk, eb, procfile, charset, UTF-8, utf8, spring boot]
+categories:
+  [
+    aws,
+    elastic beanstalk,
+    eb,
+    java,
+    jar,
+    jvm,
+    procfile,
+    charset,
+    UTF-8,
+    utf8,
+    spring boot,
+  ]
 header:
-    teaser: 'https://user-images.githubusercontent.com/20104232/64586886-8e946f80-d3d8-11e9-859e-4beb8ab11652.png'
+  teaser: "https://user-images.githubusercontent.com/20104232/64586886-8e946f80-d3d8-11e9-859e-4beb8ab11652.png"
+---
+
+> 💡  
+> Procfile이 아닌 Elastic Beanstalk의 환경 변수를 이용하는 방법도 있으니 참고해주세요!  
+> [AWS Elastic Beanstalk Java 환경 Charset 설정](../AWS-Elastic-Beanstalk-Java-환경-Charset-설정)
+
 ---
 
 Elastic Beanstalk에 배포된 자바 애플리케이션에서 한글이 정상적으로 처리되지 않은 문제를 겪고 해결한 방법을 공유합니다.
@@ -49,7 +68,7 @@ $ java -Dfile.encoding=UTF-8 -jar application_name.jar
 
 애플리케이션을 직접 실행시키는 환경이라면 위처럼 실행시키면 되지만 Elastic Beanstalk는 애플리케이션을 수동으로 실행시키지 않습니다.
 
-이 문제 해결을 위해 `Procfile`을 이용할 수 있습니다. ("[Procfile을 사용하여 애플리케이션 프로세스 구성](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/java-se-procfile.html)" 참고)  
+이 문제 해결을 위해 `Procfile`을 이용할 수 있습니다. ("[Procfile을 사용하여 애플리케이션 프로세스 구성](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/java-se-procfile.html)" 참고)
 
 jar와 함께 배포 될 `Procfile`을 생성해 애플리케이션 실행 명령을 입력합니다.
 
