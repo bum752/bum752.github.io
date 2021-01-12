@@ -1,0 +1,6 @@
+{% assign document = post | default: page %}
+{% if document.date %}
+  <p class="page__date">
+    {{ document.date | date: "%B %-d, %Y" }}
+  </p>
+{% endif %}
