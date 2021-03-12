@@ -8,6 +8,11 @@ header:
   teaser: "https://user-images.githubusercontent.com/20104232/80274274-2b134400-8714-11ea-96db-e09ba79c77e4.png"
 ---
 
+> - HandlerMethodArgumentResolver을 이용해 파라미터 어노테이션 만들기 (현재 글)
+> - [컨트롤러 메소드의 파라미터에 사용된 커스텀 어노테이션의 Swagger 문서화](../swagger-for-method-argument-annotation)
+
+---
+
 헤더에 담긴 인증정보를 처리해 사용해야 하는 경우가 있습니다.  
 이 때 컨트롤러에서 `@RequestHeader` 어노테이션을 사용해 값을 전달받을 수 있습니다.
 
@@ -139,3 +144,8 @@ class AfterControllerTest {
 ```
 
 ![image](https://user-images.githubusercontent.com/20104232/80274146-3f0a7600-8713-11ea-92b1-986398b24fc3.png)
+
+---
+
+> - HandlerMethodArgumentResolver을 이용해 파라미터 어노테이션 만들기 (현재 글)
+> - [컨트롤러 메소드의 파라미터에 사용된 커스텀 어노테이션의 Swagger 문서화](../swagger-for-method-argument-annotation)
