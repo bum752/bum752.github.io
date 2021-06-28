@@ -172,7 +172,7 @@ class UserSetterControllerTest {
 
 ![image](https://user-images.githubusercontent.com/20104232/70887237-b96a1180-2020-11ea-9d11-a1c4598915ab.png)
 
-## 방법 3. 생성사 사용
+## 방법 3. 생성자 사용
 
 생성자의 파라미터 변수명을 요청받을 이름과 같이 해줍니다.
 
