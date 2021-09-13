@@ -68,7 +68,8 @@ public class SessionIdToUserIdResolver implements HandlerMethodArgumentResolver 
 
   @Override
   public boolean supportsParameter(MethodParameter parameter) {
-    return Integer.class.equals(parameter.getGenericParameterType());
+    return parameter.hasParameterAnnotation(SessionIdToUserId.class) 
+      && Integer.class.equals(parameter.getGenericParameterType());
   }
 
   @Override
@@ -88,7 +89,7 @@ public class SessionIdToUserIdResolver implements HandlerMethodArgumentResolver 
 `supportsParameter` 메소드에 파라미터가 이 resolver를 지원하는지 정의해줍니다.  
 Integer의 파라미터에 이 어노테이션이 사용된 경우 `true`를 리턴합니다.
 
-`resolveArgument` 메소드는 `supportsParameter`가 `true`인 경우 이 어노테이션이 붙은 파라미터를 처리해줄 수 있도록 구현합니다.  
+`resolveArgument` 메소드는 `supportsParameter`가 `true`인 경우 이 어노테이션이 붙은 파라미터에 값을 넣을 수 있도록 구현합니다.  
 요청의 헤더에서 `@SessionIdToUserId`의 `value`에 해당하는 헤더를 읽어 `sessionId`를 가져와  
 변경 전 컨트롤러의 로직처럼 `sessionRepository`를 주입받아 `userId`를 조회할 수 있도록 했습니다.
 
