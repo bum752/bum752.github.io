@@ -122,7 +122,6 @@ author:
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "주니어 백엔드 엔지니어"
   location         : "대한민국 서울"
-  email            : "bum752@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
