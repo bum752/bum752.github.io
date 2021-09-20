@@ -120,8 +120,8 @@ analytics:
 author:
   name             : "신주범 (Shin Ju Beom)"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "주니어 백엔드 엔지니어"
-  location         : "대한민국 서울"
+  bio              : "백엔드 엔지니어"
+  location         : "대한민국 서울, 성남"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
